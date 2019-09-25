@@ -12,9 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
     }
 
-
+    @IBAction func toWKWebView(_ sender: UIButton) {
+        let web = WKWebViewController()
+        self.navigationController?.pushViewController(web, animated: true)
+    }
+    
 }
 
